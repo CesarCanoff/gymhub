@@ -16,7 +16,7 @@
   ![Typescript](https://img.shields.io/badge/typescript-0d1117.svg?style=for-the-badge&logo=typescript&logoColor=FACC15)
   ![Expo](https://img.shields.io/badge/expo-0d1117?style=for-the-badge&logo=expo&logoColor=FACC15)
   ![Javascript](https://img.shields.io/badge/javascript-0d1117.svg?style=for-the-badge&logo=javascript&logoColor=FACC15)
-  ![Styled-components](https://img.shields.io/badge/styled--components-0d1117?style=for-the-badge&logo=styled-components&logoColor=FACC15)
+  ![Native-Base](https://img.shields.io/badge/Native--Base-0d1117?style=for-the-badge&logo=react&logoColor=FACC15)
 
   ---
 
