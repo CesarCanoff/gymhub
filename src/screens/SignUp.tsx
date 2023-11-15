@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native';
-import { VStack, Image, Center, Heading, Text, ScrollView } from 'native-base';
+import { VStack, Image, Center, Heading, ScrollView } from 'native-base';
 
 import LogoSvg from '@assets/logo.svg';
 import BackgroundImg from '@assets/background.png';
@@ -7,12 +7,11 @@ import BackgroundImg from '@assets/background.png';
 import { Input } from '@components/Input';
 import { Button } from '@components/Button';
 
-import { AuthNavigatorRoutesProps } from '@routes/auth.routes';
 
-export function SignIn() {
-  const { navigate } = useNavigation<AuthNavigatorRoutesProps>();
+export function SignUp() {
+  const { goBack } = useNavigation();
 
-  const handleGoToSignUp = () => navigate('SignUp');
+  const handleBackToSignIn = () => goBack();
 
   return (
     <ScrollView
@@ -34,8 +33,10 @@ export function SignIn() {
 
         <Center>
           <Heading color="gray.100" fontSize="xl" mb={6} fontFamily="heading">
-            Access your account
+            Create your account
           </Heading>
+
+          <Input placeholder="Name" />
 
           <Input
             placeholder="E-mail"
@@ -43,24 +44,17 @@ export function SignIn() {
             autoCapitalize='none'
           />
 
-          <Input
-            placeholder="Password"
-            secureTextEntry
-          />
+          <Input placeholder="Password" secureTextEntry />
 
-          <Button title='Sign-in' variant="solid" />
+          <Button title='Create account' variant="solid" />
         </Center>
 
-        <Center mt={24}>
-          <Text color="gray.100" fontSize="sm" mb={3} fontFamily="body">
-            Don't have access?
-          </Text>
-          <Button
-            onPress={handleGoToSignUp}
-            title='Create an account'
-            variant="outline"
-          />
-        </Center>
+        <Button
+          onPress={handleBackToSignIn}
+          title='Back to sign-in'
+          variant="outline"
+          mt={24}
+        />
       </VStack>
     </ScrollView>
   );
