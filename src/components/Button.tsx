@@ -12,13 +12,13 @@ export function Button({ title, variant, ...rest }: Props) {
       w="full"
       rounded="sm"
       borderWidth={variant === "outline" ? 1 : 0}
-      bg={variant === "outline" ? "transparent" : "info.600"}
-      borderColor={variant === "outline" ? "info.600" : "transparent"}
-      _pressed={{ bg: variant === "outline" ? 'gray.500' : 'info.700' }}
+      bg={variant === "outline" ? "transparent" : "yellow.400"}
+      borderColor={variant === "outline" ? "yellow.400" : "transparent"}
+      _pressed={{ bg: variant === "outline" ? 'gray.500' : 'yellow.600' }}
       {...rest}
     >
       <Text
-        color={variant === "outline" ? "info.600" : "white"}
+        color={variant === "outline" ? "yellow.400" : "gray.700"}
         fontFamily="heading"
         fontSize="sm"
       >
