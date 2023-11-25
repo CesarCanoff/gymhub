@@ -1,4 +1,4 @@
-<img src="./assets/banner.png" />
+<img src="./mobile/assets/banner.png" />
 
  <br />
   <br />
