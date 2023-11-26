@@ -20,14 +20,6 @@ export function SignIn() {
       showsVerticalScrollIndicator={false}
     >
       <VStack flex={1} px={10}>
-        {/* <Image
-          source={BackgroundImg}
-          defaultSource={BackgroundImg}
-          alt="Pessoas treinando em uma academia"
-          resizeMode='contain'
-          position='absolute'
-        /> */}
-
         <Center my={24}>
           <LogoSvg />
         </Center>
